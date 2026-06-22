@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Kumar</title>
+
+    <!-- tailwind css script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+
+    <!-- custom css -->
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex h-16 justify-between items-center px-8">
+        <div class="logo">
+          <h1 class="text-3xl cursor-pointer">
+            Yash Kumar<span class="text-blue-600">.</span>
+          </h1>
+        </div>
+        <div class="links flex gap-10">
+          <a class="text-l hover:text-blue-600 transition" href="/">Home</a>
+          <a class="text-l hover:text-blue-600 transition" href="/">About me</a>
+          <a class="text-l hover:text-blue-600 transition" href="/">Projects</a>
+          <a class="text-l hover:text-blue-600 transition" href="/">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="heroSection" class="h-[calc(100vh-4rem)] w-full relative">
+        <div class="heroImage relative h-full w-full">
+          <img
+            class="absolute bottom-0 left-2"
+            src="./src/hero image portfolio.jpg"
+            alt=""
+          />
+        </div>
+        <div class="absolute h-full z-10 w-1/2 top-0 flex right-0">
+          <div class="horizontalDivs h-full w-full flex">
+            <div class="leftOfRight w-full h-full">
+              <div
+                class="projectDes flex justify-center items-center gap-10 h-1/4"
+              >
+                <div class="detail1 text-[#7B7B7B]">
+                  <p class="text-4xl text-[#222222]">50+</p>
+                  <p>projects delivered</p>
+                </div>
+                <div class="detail1 text-[#7B7B7B]">
+                  <p class="text-4xl text-[#222222]">10+</p>
+                  <p>Client startup build</p>
+                </div>
+              </div>
+              <div
+                class="nameDes h-1/2 flex flex-col justify-center items-center"
+              >
+                <p class="text-9xl">HELLO</p>
+                <p class="self-start ml-28 text-lg">
+                  -It's Yash Kumar Tech Enthusiast
+                </p>
+              </div>
+              <div class="scrollDown h-1/4">
+                <a
+                  href="#aboutSection"
+                  class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer"
+                >
+                  <span class="text-sm tracking-widest text-gray-600 mb-0.5">
+                    SCROLL
+                  </span>
+
+                  <div class="w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mt-5 rightOfRight w-1/3 flex flex-col items-center">
+              <div class="[writing-mode:vertical-rl] text-l">WEB DEVELOPER</div>
+
+              <div class="w-[2px] h-110 bg-black my-4"></div>
+
+              <div class="text-sm [writing-mode:vertical-rl]">2026</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="aboutSection"
+        class="w-full h-[80vh] flex justify-between m-4"
+      >
+        <div class="myDetail w-1/3 h-full">
+          <p class="text-2xl mt-20 ml-14"><b>About Me</b></p>
+          <p class="ml-14 text-[#7b7b7b] max-w-prose mt-4">
+            I'm specialize in turning complex problems into elegant solutions.
+            My approach blends creativity with strategic thinking to deliver
+            designs that not only look great but work seamlessly. Ready to start
+            your next project?
+          </p>
+        </div>
+        <div class="latestProject w-1/5 max-h-full rounded-md m-10"></div>
+        <div
+          class="experience w-1/3 h-full flex flex-col justify-start mt-20 p-6 space-y-4"
+        >
+          <div class="flex items-start gap-3 mb-5">
+            <i
+              class="fa-solid fa-hexagon-nodes text-xl text-black-400 mt-1"
+            ></i>
+            <p class="text-md text-[#7b7b7b]">
+              As a Computer Science student, I focus on building practical web
+              applications, improving my development skills, and solving
+              real-world problems through technology.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3 mr-10">
+            <i
+              class="fa-solid fa-hexagon-nodes text-xl text-black-400 mt-1"
+            ></i>
+            <p class="text-md text-[#7b7b7b]">
+              I am passionate about creating impactful products, learning new
+              technologies, and working toward my long-term goal of building a
+              successful business.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <footer class="bg-zinc-950 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-8 py-16">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-12"
+        >
+          <!-- Left Side -->
+          <div class="flex flex-wrap items-center gap-8 text-sm">
+            <a href="#" class="bg-zinc-800 px-6 py-3 rounded-full"> Home </a>
+
+            <a href="#" class="hover:text-gray-300">About Me</a>
+            <a href="#" class="hover:text-gray-300">Portfolio</a>
+            <a href="#" class="hover:text-gray-300">Services</a>
+            <a href="#" class="hover:text-gray-300">Blog</a>
+          </div>
+
+          <!-- Right Side -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-light tracking-tight">
+              yashkumar.connect@gmail.com
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Borders -->
+      <div
+        class="absolute left-0 top-0 w-56 h-56 border border-zinc-800 rounded-xl"
+      ></div>
+
+      <div
+        class="absolute left-20 top-20 w-40 h-40 border border-zinc-800 rounded-xl"
+      ></div>
+
+      <div
+        class="absolute right-0 top-0 w-56 h-56 border border-zinc-800 rounded-xl"
+      ></div>
+
+      <div
+        class="absolute right-20 top-20 w-40 h-40 border border-zinc-800 rounded-xl"
+      ></div>
+    </footer>
+  </body>
+</html>
